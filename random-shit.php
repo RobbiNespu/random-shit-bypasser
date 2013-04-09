@@ -166,7 +166,7 @@ function bypass($link){
         }elseif(preg_match('/http(s?):\/\/(www\.)?(q.gs|adf.ly|j.gs|u.bb)\/.*/', $link) ){
                 preg_match_all('/var zzz \= \'(.*?)\'\;/', $get, $out);
                 return $out[1][0];
-        }elseif(preg_match('/http(s?):\/\/(www\.)?.*\.(linkbucks.com|tinybucks.net)/', $link) ){
+        }elseif(preg_match('/http(s?):\/\/(www\.)?.*\.(linkbucks.com|tinybucks.net|any.gs)/', $link) ){
                 preg_match_all('/Lbjs\.TargetUrl \= \'(.*?)\'/', $get, $out);
                 return $out[1][0];
         }elseif(preg_match('/http(s?):\/\/(www\.)?go\.urlcash\.net\/.*/', $link)){
